@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayaan Muskula — Portfolio</title>
+  <meta name="description" content="Ayaan Muskula — developer, designer, and student. Welcome to my personal website.">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa6bf;--accent:#7dd3fc}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,#071022 0%,var(--bg) 100%);color:#e6eef8;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem}
+    .container{max-width:900px;width:100%;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:2rem;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    header{display:flex;gap:1.25rem;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263b}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:0;color:var(--muted);margin-top:6px}
+    nav{margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap}
+    a.btn{color:#04263b;background:#7dd3fc;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    main{display:grid;grid-template-columns:1fr 320px;gap:1.25rem;margin-top:1.5rem}
+    .card{background:rgba(255,255,255,0.02);padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .section-title{font-size:.9rem;color:var(--muted);margin-bottom:.75rem}
+    ul.projects{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+    li.project{display:flex;justify-content:space-between;gap:.75rem;padding:.6rem;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+    footer{margin-top:1.25rem;color:var(--muted);font-size:.9rem;text-align:center}
+    @media (max-width:800px){main{grid-template-columns:1fr}nav{justify-content:flex-start}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden="true">AM</div>
+      <div>
+        <h1>Ayaan Muskula</h1>
+        <p class="lead">Developer • Designer • Lifelong learner — building thoughtful web experiences.</p>
+        <nav>
+          <a class="btn" href="#projects">Projects</a>
+          <a class="btn" href="#about">About</a>
+          <a class="btn" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card" id="projects">
+          <div class="section-title">Featured Projects</div>
+          <ul class="projects">
+            <li class="project">
+              <div>
+                <strong>Personal Website</strong>
+                <div style="font-size:.85rem;color:var(--muted)">This site (responsive, accessible, fast).</div>
+              </div>
+              <div style="color:var(--muted)">2025</div>
+            </li>
+            <li class="project">
+              <div>
+                <strong>Open-source Tool</strong>
+                <div style="font-size:.85rem;color:var(--muted)">CLI to streamline developer workflows.</div>
+              </div>
+              <div style="color:var(--muted)">2024</div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card" id="about" style="margin-top:1rem">
+          <div class="section-title">About</div>
+          <p style="margin:0;color:var(--muted)">Hi — I'm Ayaan. I enjoy building web apps, experimenting with design systems, and learning new technologies. I focus on accessibility, performance, and developer experience.</p>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <div class="section-title">Get in touch</div>
+          <p style="margin:0 0 .75rem 0;color:var(--muted)">Email: <a href="mailto:hello@ayaanmuskula.com">hello@ayaanmuskula.com</a></p>
+          <div class="section-title">Social</div>
+          <p style="margin:0;color:var(--muted)"><a href="#" style="color:var(--accent);text-decoration:none">GitHub</a> · <a href="#" style="color:var(--accent);text-decoration:none">Twitter</a> · <a href="#" style="color:var(--accent);text-decoration:none">LinkedIn</a></p>
+        </div>
+
+        <div class="card" style="margin-top:1rem;text-align:center">
+          <div class="section-title">Quick links</div>
+          <a class="btn" href="#contact">Hire me</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© 2025 Ayaan Muskula — Built with ❤️</div>
+    </footer>
+  </div>
+</body>
+</html>
