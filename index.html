@@ -9,10 +9,11 @@
   <style>
     :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa6bf;--accent:#7dd3fc}
     *{box-sizing:border-box}
-    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,#071022 0%,var(--bg) 100%);color:#e6eef8;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem}
-    .container{max-width:900px;width:100%;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:2rem;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,#071022 0%,var(--bg) 100%);color:#e6eef8;line-height:1.5}
+    .container{max-width:900px;width:100%;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:2rem;border-radius:12px;margin:2rem auto}
     header{display:flex;gap:1.25rem;align-items:center}
-    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263b}
+    .avatar{width:96px;height:96px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263b;overflow:hidden}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
     h1{margin:0;font-size:1.6rem}
     p.lead{margin:0;color:var(--muted);margin-top:6px}
     nav{margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap}
@@ -29,7 +30,9 @@
 <body>
   <div class="container">
     <header>
-      <div class="avatar" aria-hidden="true">AM</div>
+      <div class="avatar" aria-hidden="false">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Red_car.svg" alt="A red car">
+      </div>
       <div>
         <h1>Ayaan Muskula</h1>
         <p class="lead">Developer • Designer • Lifelong learner — building thoughtful web experiences.</p>
@@ -65,7 +68,7 @@
 
         <div class="card" id="about" style="margin-top:1rem">
           <div class="section-title">About</div>
-          <p style="margin:0;color:var(--muted)">Hi — I'm Ayaan. I enjoy building web apps, experimenting with design systems, and learning new technologies. I focus on accessibility, performance, and developer experience.</p>
+          <p style="margin:0;color:var(--muted)">Hi — I'm Ayaan. I enjoy building web apps, experimenting with design systems, and learning new technologies. I focus on accessibility, performance, and clean design.</p>
         </div>
       </section>
 
